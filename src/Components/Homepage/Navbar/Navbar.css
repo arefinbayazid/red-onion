@@ -1,0 +1,82 @@
+
+.cart_icon{
+    position: relative;
+}
+.cart_icon::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: red;
+    position: absolute;
+    top: -5px;
+    right: -2px;
+}
+.login_btn{
+    width: 50px;
+    border: 0;
+    outline: 0;
+    background: white;
+    font-weight: 500;
+}
+.signup_btn{
+    width: 100px;
+    border: 0;
+    outline: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+.menu_form h1, .fa-sign-in-alt, .fa-lock{
+    display: none;
+}
+.goggle_login_btn{
+    display: none;
+}
+@media only screen and (max-width : 991px) {
+    .menu_form{
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 30px 40px;
+    }
+    .menu_form h1{
+        display: block;
+    }
+    .signup_btn{
+       background-color: transparent;
+        color: black;
+        font-weight: 500;
+        padding:0;
+        width: 150px;
+        text-align: left;
+        margin-left: 15px;
+    }
+    .login_btn{
+        background-color: transparent;
+        width: 150px;
+        text-align: left;
+        margin-left: 15px;
+    }
+    .fa-lock, .fa-sign-in-alt{
+        display: inline;
+        margin-right: 10px;
+        color: red;
+    }
+    .goggle_login_btn{
+        display: block;
+        border: 0;
+        padding: 0;
+        text-align: center;
+        width: block;
+        font-weight: 500;
+        padding: 5px 20px;
+        border: 1px solid rgb(185, 185, 185);
+        /* margin-top: 25px; */
+        border-radius: 50px;
+        margin: 25px auto 0;
+    }
+}

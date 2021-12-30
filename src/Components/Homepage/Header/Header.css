@@ -1,0 +1,43 @@
+.header_box{
+    height: 500px;
+    width: 100%;
+    background-image: url('https://i.ibb.co/zZV4yFZ/bannerbackground.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_box{
+    height: 45px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: white;
+}
+.search_box input {
+    border: 0;
+    background-color: transparent;
+    width: 75%;
+    outline: none;
+    padding: 15px;
+}
+.search_box button{
+    width: 25%;
+    background-color: red;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+}
+.search_box input::placeholder{
+    font-weight: 500;
+}
+
+@media only screen and (max-width : 991px) {
+    .search_box{
+        width: 90%;
+    }
+}

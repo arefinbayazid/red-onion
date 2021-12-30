@@ -1,0 +1,24 @@
+.menu_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_items ul{
+    display: flex;
+}
+.menu_items ul li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+.actice_list_item{
+    border-bottom: 2px solid red;
+    color: red;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.meals_items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 25px;
+}
